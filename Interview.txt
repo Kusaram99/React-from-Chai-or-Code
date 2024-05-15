@@ -1,0 +1,23 @@
+Q.1) 
+// what will be output of below code?
+const [counter, setCounter] = useState(15);
+//it is in the function.
+setCounter(counter + 1);
+setCounter(counter + 1);
+setCounter(counter + 1);
+
+// when user will click to button value increase by 1 not with 3.
+counter = 16
+
+Because:
+         -It's a react foundational concept.
+         -React doesn't immediately update the state.
+         -useSate kya karta hen jitane bhi update UI me bhejna hen to vo batches me bhejta hen.
+         -kyu ki ham yaha akhi kam same tarah se kar rahen hen.
+         -here it will become a batch and see work is doing same.
+         -then it will sent this updation to the UI.
+         -that's reason it only will increase 1 because it in batch.
+         -Instead, it schedules an update and batches multiple state updates into a single update for performance reasons.
+
+
+
