@@ -1,1 +1,1 @@
-### Learnt from Chai Or Code YouTube Channel
+### Learnt React.js from Chai Or Code YouTube Channel
